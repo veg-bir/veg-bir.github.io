@@ -111,7 +111,7 @@ function Firework(x, y, vx, vy, radius = 5, color = "white", title = false) {
         for (var i = 0; i < points.length; i++) {
           var p = points[i];
           var v = {
-            x: (p.x - 60) * scale + 300 + (Math.random() - 0.5) * 0.1,
+            x: (p.x - 60) * scale - 100 + (Math.random() - 0.5) * 0.1,
             y: (p.y - 20) * scale + (Math.random() - 0.5) * 0.1
           }
           var particle = new TitleParticle(this.x, this.y, v.x, v.y);
